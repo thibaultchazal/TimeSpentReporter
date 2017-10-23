@@ -82,6 +82,7 @@ void loop()
 
 void start()
 {
+    Serial.println("Start");
     a = millis();
     delay(150);
     currentTimer = i;
@@ -99,6 +100,7 @@ void start()
 
 void pause()
 {
+    Serial.println("Pause");
     a = millis();
     delay(10);
     while (digitalRead(8) == HIGH)
@@ -123,14 +125,15 @@ void Display()
     sprintf(currentTime, "%02d:%02d:%02d", hours, minutes, seconds);
     lcd.setCursor(0,0);
     lcd.print(currentTime); // prints in the format HH:MM:SS
-    Serial.println(currentTime);
+//    Serial.println(currentTime);
 
-    Serial.println(total);
+//    Serial.println(total);
     delay(10);
 }
 
 void reset()
 {
+  Serial.println("Reset");
   lcd.clear();
   lcd.print("press start");
   i = 0;
