@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="337px" height="339px" viewBox="0 0 337 339" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo-Copy">
+            <g>
+                <rect id="Rectangle-4" fill="#1641AF" x="0" y="0" width="337" height="339"></rect>
+                <path d="M45.4985722,91.2469486 L159.498133,25.409993 L159.498133,25.409993 C164.7589,22.371798 171.2411,22.371798 176.501867,25.409993 L290.001538,90.9582523 L290.001538,90.9582523 C294.332286,93.4593436 297,98.0806362 297,103.08172 L297,234.763748 L297,234.763748 C297,240.479273 293.951184,245.76075 289.001757,248.61914 L177.502087,313.012361 L177.502087,313.012361 C171.622406,316.40799 164.377594,316.40799 158.497913,313.012361 L46.9982427,248.61914 L46.9982427,248.61914 C42.0488158,245.76075 39,240.479273 39,234.763748 L39,102.504454 L39,102.504454 C39,97.8605908 41.4771628,93.5693904 45.4985722,91.2469486 Z" id="Rectangle-2" fill="#FFFFFF"></path>
+                <text id="Chronos-Record-your" font-family="CenturyGothic-Bold, Century Gothic" font-size="48" font-weight="bold" fill="#1641AF">
+                    <tspan x="71.5195312" y="166">Chronos</tspan>
+                    <tspan x="264.480469" y="166" font-size="24"></tspan>
+                    <tspan x="68.1035156" y="225" font-family="CenturyGothic, Century Gothic" font-size="24" font-weight="normal">Record your time</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <div style="float: right;">
-      <p> Current time: <span id="currentTime"></span></p>
-    </div>
-    <h1>Hello!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    This app is designed to give you processed records of your time.</br>
-    To do that, we are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    Electron <script>document.write(process.versions.electron)</script>,
-    and Serialport <script>document.write(require('serialport/package').version)</script>.
+<script src="./lib/w3.js"></script>
+<script type="text/javascript" src="function.js"></script>
+<script> display_projects(); </script>
 
-    <div>
-      <p> The chronos is currently <span id="state"></span></p>
-      <p> Started time: <span id="startedTime"></span></p>
-      <p> Time spent (breaks excluded): <span id="chrono"></span></p>
+<body>
 
-    </div>
+
+   <div w3-include-html="header.html"></div>
+   <div w3-include-html="nav.html"></div>
+   <script>
+   w3.includeHTML();
+   </script>
+
+
+    <section class="main">
+      <div class="chronometre">
+        <p class="chrono"> My chronos indicates</p>
+        <p class="chrono"><span id="chrono"></span></p>
+        <p class="chrono"> 00:00:00 </p>
+      </div>
+
+      <div class="projects_section">
+          <h1>Current projects</h1>
+          <div class="projects"></div>
+      </div>
+
+
+    </section>
+
+
+    <div w3-include-html="footer.html"></div>
+    <script>w3.includeHTML();</script>
 
   </body>
-
   <script>
-    // You can also require other files to run in this process
-    require('./renderer.js')
+    window.onload = link();
+    function link(){
+      projects = document.getElementsByClassName('projects');
+      for (var i = 0; i < projects.length; i++) {
+          projects[i].addEventListener('click',redirect,false);
+      }
+      function redirect(ev){
+        localStorage.setItem('prjct', ev.target.dataset.project);
+          window.location.href = 'project.html';
+          //ev.target.dataset.project
+          // alert(ev.target.id);
+      }
+      // var userSelection = document.getElementsByClassName('projects');
+      // console.log(userSelection);
+      // for(let i = 0; i < userSelection.length; i++) {
+      //   userSelection[i].addEventListener("click", function() {
+      //     console.log("Clicked index: " + i);
+      //   })
+      // };
+    };
+
+//     var user_selection = document.getElementsByClassName('idiot');
+//     for(let i = 0; i < userSelection.length; i++) {
+//
+//     user_selection[i].addEventListener("click", function() {
+//       var name = this.dataset.project;
+//       console.log(name);
+//       window.location.href = 'project.html';
+        // if (name) {
+        //   localStorage.setItem('prjct', name);
+        //   window.location.href = 'project.html';
+        // }
+  //   });
+  // };​
   </script>
+<script>
+  // You can also require other files to run in this process
+  require('./renderer.js')
+</script>
 </html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="258px" height="293px" viewBox="0 0 258 293" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo">
+            <g>
+                <path d="M6.49857223,68.2469486 L120.498133,2.40999301 L120.498133,2.40999301 C125.7589,-0.628202001 132.2411,-0.628202001 137.501867,2.40999301 L251.001538,67.9582523 L251.001538,67.9582523 C255.332286,70.4593436 258,75.0806362 258,80.0817201 L258,211.763748 L258,211.763748 C258,217.479273 254.951184,222.76075 250.001757,225.61914 L138.502087,290.012361 L138.502087,290.012361 C132.622406,293.40799 125.377594,293.40799 119.497913,290.012361 L7.99824274,225.61914 L7.99824274,225.61914 C3.04881581,222.76075 3.70182172e-13,217.479273 3.69482223e-13,211.763748 L3.12638804e-13,79.5044544 L3.17967874e-13,79.5044544 C3.17399165e-13,74.8605908 2.47716285,70.5693904 6.49857223,68.2469486 Z" id="Rectangle-2" fill="#1641AF"></path>
+                <text id="Chronos-Record-your" font-family="CenturyGothic-Bold, Century Gothic" font-size="48" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="32.5195312" y="143">Chronos</tspan>
+                    <tspan x="225.480469" y="143" font-size="24"></tspan>
+                    <tspan x="29.1035156" y="202" font-family="CenturyGothic, Century Gothic" font-size="24" font-weight="normal">Record your time</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

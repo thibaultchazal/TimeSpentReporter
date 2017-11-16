@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script src="./lib/w3.js"></script>
+<script type="text/javascript" src="function.js"></script>
+<script> display_projects(); </script>
+<body>
+
+
+
+   <div w3-include-html="header.html"></div>
+   <div w3-include-html="nav.html"></div>
+   <script>
+   w3.includeHTML();
+   </script>
+
+
+    <section class="main">
+
+<!-- display the structure and fill it with the project object -->
+  <div class="title">
+    <p>Projet: <span id="project_title"></span></p>
+  </div>
+    </section>
+
+  </body>
+
+  <!-- Get the project from the url and create an object with all the data relative to it from the db -->
+  <script>
+  var project = localStorage.getItem('prjct');
+
+  document.getElementById('project_title').innerHTML = project;
+  </script>
+
+<script>
+  // You can also require other files to run in this process
+  require('./renderer.js')
+</script>
+</html>
